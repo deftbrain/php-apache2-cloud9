@@ -1,0 +1,8 @@
+# macOS stuff
+.DS_Store
+
+# IntelliJ IDEA project files
+/.idea/
+
+# Cloud9 project files
+/workspace/.c9

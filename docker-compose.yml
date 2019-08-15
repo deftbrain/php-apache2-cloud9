@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  cloud9:
+    build: ./cloud9-docker
+    ports:
+      - 8080:80
+    volumes:
+      - ./workspace:/workspace
+
+  web-server:
+    image: thecodingmachine/php:7.3-v2-slim-apache
+    ports:
+      - 80:80
+    volumes:
+      - ./workspace:/var/www/html
